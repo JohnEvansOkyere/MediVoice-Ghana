@@ -1,0 +1,171 @@
+{
+  "name": "MediVoice GH - Appointment Booking",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "appointment-booking",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "webhookId": "appointment-booking"
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "appointment_id",
+              "value": "={{ $json.body.appointment_id }}"
+            },
+            {
+              "name": "user_email",
+              "value": "={{ $json.body.user_email }}"
+            },
+            {
+              "name": "full_name",
+              "value": "={{ $json.body.full_name }}"
+            },
+            {
+              "name": "phone",
+              "value": "={{ $json.body.phone }}"
+            },
+            {
+              "name": "preferred_date",
+              "value": "={{ $json.body.preferred_date }}"
+            },
+            {
+              "name": "preferred_time",
+              "value": "={{ $json.body.preferred_time }}"
+            },
+            {
+              "name": "reason",
+              "value": "={{ $json.body.reason }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-node",
+      "name": "Extract Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [470, 300]
+    },
+    {
+      "parameters": {
+        "fromEmail": "noreply@medivoice.gh",
+        "toEmail": "={{ $json.user_email }}",
+        "subject": "Appointment Confirmation - MediVoice GH",
+        "text": "Dear {{ $json.full_name }},\n\nThank you for booking an appointment through MediVoice GH.\n\nAppointment Details:\n- Date: {{ $json.preferred_date }}\n- Time: {{ $json.preferred_time }}\n- Phone: {{ $json.phone }}\n- Reason: {{ $json.reason }}\n\nOur team will contact you shortly to confirm your appointment.\n\nIf you need to reschedule, please contact us at support@medivoice.gh\n\nBest regards,\nMediVoice GH Team",
+        "options": {}
+      },
+      "id": "email-user-node",
+      "name": "Send Email to User",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [690, 200],
+      "credentials": {
+        "smtp": {
+          "id": "1",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "appointments@medivoice.gh",
+        "toEmail": "admin@medivoice.gh",
+        "subject": "New Appointment - {{ $json.full_name }}",
+        "text": "New appointment request:\n\nPatient: {{ $json.full_name }}\nEmail: {{ $json.user_email }}\nPhone: {{ $json.phone }}\nPreferred Date: {{ $json.preferred_date }}\nPreferred Time: {{ $json.preferred_time }}\nReason: {{ $json.reason }}\n\nAppointment ID: {{ $json.appointment_id }}\n\nPlease contact the patient to confirm.",
+        "options": {}
+      },
+      "id": "email-admin-node",
+      "name": "Notify Admin",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2,
+      "position": [690, 400],
+      "credentials": {
+        "smtp": {
+          "id": "1",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"success\": true, \"message\": \"Appointment booking received\", \"appointment_id\": $json.appointment_id } }}"
+      },
+      "id": "respond-node",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [910, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Data": {
+      "main": [
+        [
+          {
+            "node": "Send Email to User",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Notify Admin",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email to User": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notify Admin": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {},
+  "versionId": "1",
+  "id": "appointment-booking",
+  "meta": {
+    "instanceId": "medivoice-gh"
+  },
+  "tags": []
+}

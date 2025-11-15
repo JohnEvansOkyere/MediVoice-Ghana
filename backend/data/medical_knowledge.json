@@ -1,0 +1,156 @@
+[
+  {
+    "text": "Malaria: A mosquito-borne disease common in Ghana. Symptoms include fever, chills, headache, sweating, fatigue, nausea, and vomiting. Often occurs in cycles every 48-72 hours. Treatment: Antimalarial drugs like artemisinin-based combination therapies (ACTs). Prevention: Use mosquito nets, insect repellent, and antimalarial medication when necessary.",
+    "metadata": {
+      "source": "Ghana Health Service",
+      "disease": "Malaria",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Typhoid Fever: A bacterial infection from contaminated food or water. Symptoms include sustained fever (103-104°F), weakness, stomach pain, headache, loss of appetite, sometimes rash. Treatment: Antibiotics (ciprofloxacin, azithromycin). Prevention: Safe water, good hygiene, typhoid vaccine.",
+    "metadata": {
+      "source": "Ghana Health Service",
+      "disease": "Typhoid",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Cholera: An acute diarrheal illness from contaminated water. Symptoms include watery diarrhea (rice-water stool), vomiting, rapid dehydration, muscle cramps. Can be fatal within hours if untreated. Treatment: Oral rehydration salts (ORS), IV fluids for severe cases. Prevention: Clean water, proper sanitation.",
+    "metadata": {
+      "source": "WHO Guidelines",
+      "disease": "Cholera",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Dengue Fever: Mosquito-borne viral infection. Symptoms include high fever, severe headache, pain behind eyes, joint and muscle pain, rash, mild bleeding. Treatment: Rest, fluids, paracetamol (NOT aspirin). Prevention: Mosquito control, protective clothing.",
+    "metadata": {
+      "source": "WHO Guidelines",
+      "disease": "Dengue",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Hypertension (High Blood Pressure): Often called 'silent killer' with no symptoms. Can cause headaches, shortness of breath, nosebleeds. Complications include heart attack, stroke, kidney disease. Treatment: Lifestyle changes (diet, exercise), medications (ACE inhibitors, diuretics). Monitor regularly.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Hypertension",
+      "category": "cardiovascular"
+    }
+  },
+  {
+    "text": "Diabetes: Symptoms include excessive thirst, frequent urination, extreme hunger, unexplained weight loss, fatigue, blurred vision, slow healing wounds. Type 2 is most common in Ghana. Treatment: Diet control, exercise, medications (metformin), insulin if needed. Monitor blood sugar regularly.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Diabetes",
+      "category": "metabolic"
+    }
+  },
+  {
+    "text": "Pneumonia: Lung infection causing cough with mucus, fever, chills, difficulty breathing, chest pain when breathing. Can be bacterial or viral. Treatment: Antibiotics for bacterial pneumonia, rest, fluids. Seek immediate care if breathing difficulty worsens.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Pneumonia",
+      "category": "respiratory"
+    }
+  },
+  {
+    "text": "Gastroenteritis (Stomach Flu): Inflammation of stomach and intestines. Symptoms include diarrhea, nausea, vomiting, stomach cramps, sometimes fever. Often from contaminated food/water or viruses. Treatment: Rest, fluids, ORS. Seek help if severe dehydration, blood in stool, or high fever.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Gastroenteritis",
+      "category": "gastrointestinal"
+    }
+  },
+  {
+    "text": "Hepatitis B: Liver infection common in Ghana. Can be acute or chronic. Symptoms include jaundice (yellow skin/eyes), dark urine, fatigue, abdominal pain, nausea. Spread through blood, sexual contact. Prevention: Vaccination (highly effective). Treatment: Antiviral medications for chronic cases.",
+    "metadata": {
+      "source": "Ghana Health Service",
+      "disease": "Hepatitis B",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Tuberculosis (TB): Bacterial lung infection. Symptoms include persistent cough (>2 weeks), coughing blood, chest pain, weight loss, night sweats, fever. Spread through air. Treatment: 6-month course of antibiotics. Must complete full treatment. BCG vaccine provides some protection.",
+    "metadata": {
+      "source": "WHO Guidelines",
+      "disease": "Tuberculosis",
+      "category": "infectious_disease"
+    }
+  },
+  {
+    "text": "Urinary Tract Infection (UTI): More common in women. Symptoms include burning during urination, frequent urination, cloudy/bloody urine, pelvic pain, fever if kidney involved. Treatment: Antibiotics (3-7 days). Drink plenty of water. Seek care if fever or back pain develops.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "UTI",
+      "category": "urinary"
+    }
+  },
+  {
+    "text": "Asthma: Chronic respiratory condition. Symptoms include wheezing, shortness of breath, chest tightness, coughing (worse at night). Triggers: dust, smoke, exercise, allergies. Treatment: Inhalers (quick-relief and controller), avoid triggers. Emergency if severe breathing difficulty.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Asthma",
+      "category": "respiratory"
+    }
+  },
+  {
+    "text": "First Aid - Cuts and Wounds: Clean wound with clean water, apply pressure with clean cloth to stop bleeding. For minor cuts: wash, apply antibiotic ointment, cover with bandage. Deep cuts or heavy bleeding: maintain pressure, elevate if possible, seek immediate medical care.",
+    "metadata": {
+      "source": "Red Cross Guidelines",
+      "category": "first_aid"
+    }
+  },
+  {
+    "text": "First Aid - Burns: For minor burns: Run cool (not ice-cold) water over burn for 10-20 minutes, cover with clean cloth. DO NOT apply butter, oil, or ice. For severe burns (large area, white/charred skin): Cover with clean cloth, seek immediate medical care, do not remove stuck clothing.",
+    "metadata": {
+      "source": "Red Cross Guidelines",
+      "category": "first_aid"
+    }
+  },
+  {
+    "text": "First Aid - Fever: Take temperature. If fever >38°C (100.4°F): Give paracetamol, drink plenty of fluids, sponge with lukewarm water, rest. Seek medical care if: fever >39.4°C (103°F), lasts >3 days, accompanied by severe headache, stiff neck, rash, difficulty breathing, or confusion.",
+    "metadata": {
+      "source": "Red Cross Guidelines",
+      "category": "first_aid"
+    }
+  },
+  {
+    "text": "Dehydration: Symptoms include dry mouth, decreased urination, dark urine, dizziness, fatigue, confusion. Common from diarrhea, vomiting, fever. Treatment: Oral rehydration salts (ORS), clean water, coconut water. For children: continue breastfeeding. Seek care if severe (no urine, extreme weakness, rapid heartbeat).",
+    "metadata": {
+      "source": "WHO Guidelines",
+      "category": "general_health"
+    }
+  },
+  {
+    "text": "Anemia: Common in Ghana, especially among women and children. Symptoms include fatigue, weakness, pale skin, shortness of breath, dizziness, cold hands/feet. Often from iron deficiency. Treatment: Iron supplements, diet rich in iron (red meat, beans, leafy greens), treat underlying cause (malaria, hookworm).",
+    "metadata": {
+      "source": "Ghana Health Service",
+      "disease": "Anemia",
+      "category": "blood_disorder"
+    }
+  },
+  {
+    "text": "Common Cold: Viral infection. Symptoms include runny nose, sore throat, cough, sneezing, mild headache, low fever. Self-limiting (resolves in 7-10 days). Treatment: Rest, fluids, paracetamol for fever/pain, warm salt water gargle. No antibiotics needed. Seek care if symptoms worsen or last >10 days.",
+    "metadata": {
+      "source": "Medical Database",
+      "disease": "Common Cold",
+      "category": "respiratory"
+    }
+  },
+  {
+    "text": "Skin Infections: Common in tropical climate. Symptoms include redness, swelling, pus, pain, warmth. Types: boils, abscesses, cellulitis. Treatment: Keep clean and dry, warm compress, antibiotics if spreading. Prevention: Good hygiene, keep wounds clean and covered, avoid sharing personal items.",
+    "metadata": {
+      "source": "Medical Database",
+      "category": "skin"
+    }
+  },
+  {
+    "text": "When to Seek Emergency Care (Call 112): Severe bleeding that won't stop, chest pain or pressure, difficulty breathing, severe allergic reaction, loss of consciousness, severe head injury, stroke symptoms (facial drooping, arm weakness, speech difficulty), severe burns, broken bones with visible deformity, poisoning or overdose.",
+    "metadata": {
+      "source": "Emergency Guidelines",
+      "category": "emergency"
+    }
+  }
+]
